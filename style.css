@@ -1,0 +1,160 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    overflow: hidden; /* Evita barras de rolagem */
+    position: relative;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Estilo da imagem de fundo */
+.background-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Garante que a imagem cubra toda a tela */
+    z-index: 1; /* Coloca a imagem no fundo */
+}
+
+/* Estilo do container de login */
+.login-container {
+    background-color: rgba(255, 255, 255, 0.9); /* Fundo semi-transparente */
+    padding: 40px; /* Aumentei o padding para ampliar a div */
+    border-radius: 15px; /* Bordas mais arredondadas */
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2); /* Sombra mais forte */
+    width: 400px; /* Largura maior */
+    text-align: center;
+    z-index: 2; /* Coloca o container em cima da imagem */
+    position: relative; /* Garante que o z-index funcione */
+}
+
+h1 {
+    margin-bottom: 30px; /* Aumentei o espaçamento */
+    color: #333;
+    font-size: 24px; /* Título maior */
+}
+
+.input-group {
+    margin-bottom: 20px; /* Aumentei o espaçamento */
+    text-align: left;
+}
+
+.input-group label {
+    display: block;
+    margin-bottom: 10px; /* Aumentei o espaçamento */
+    color: #333;
+    font-size: 14px; /* Tamanho da fonte menor */
+}
+
+.input-icon {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.input-icon i {
+    position: absolute;
+    left: 10px;
+    font-size: 18px;
+    color: #333;
+}
+
+.input-icon input {
+    width: 100%;
+    padding: 12px 12px 12px 40px; /* Aumentei o padding */
+    border: none; /* Removi a borda */
+    border-bottom: 2px solid #ccc; /* Linha inferior */
+    background: transparent; /* Fundo transparente */
+    font-size: 16px;
+    outline: none; /* Removi o outline */
+}
+
+.input-icon input:focus {
+    border-bottom-color: #007bff; /* Cor da linha ao focar */
+}
+
+.forgot-password {
+    font-size: 14px;
+    display: block;
+    margin-bottom: 20px; /* Aumentei o espaçamento */
+    color: #8f9499;
+    text-decoration: none;
+    text-align: right; /* Alinhado à direita */
+}
+
+.forgot-password:hover {
+    text-decoration: underline;
+}
+
+/* Botão de login com gradiente */
+.login-button {
+    width: 100%;
+    padding: 12px;
+    background: linear-gradient(90deg, #3fbbe4, #ff00c8); /* Gradiente azul */
+    color: #fff;
+    border: none;
+    border-radius: 30px; /* Bordas arredondadas */
+    font-size: 16px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.login-button:hover {
+    background: linear-gradient(90deg, #0004ff, #c300ff); /* Gradiente mais escuro ao passar o mouse */
+}
+
+.signup-section {
+    margin-top: 30px; 
+    color: #333;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 15px; 
+    margin: 20px 0; 
+}
+
+.social-icons a {
+    color: #ffffff;
+    font-size: 24px;
+    text-decoration: none;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.social-icons a:hover {
+    opacity: 0.8;
+}
+
+.fb {
+    background-color: #2600ff;
+}
+
+.tw {
+    background-color: #0099ff;
+}
+
+.gl {
+    background-color: #ff0000;
+}
+
+.signup-link {
+    color: #1b1c1d;
+    text-decoration: none;
+}
+
+.signup-link:hover {
+    text-decoration: none;
+}
